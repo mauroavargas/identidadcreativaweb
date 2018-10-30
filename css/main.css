@@ -3,6 +3,7 @@ body {
   height: 100%;
   font-family: 'Open Sans', sans-serif;
   z-index: 0;
+  cursor: url(images/my-cursor.png), auto;
 }
 
 p {
@@ -98,7 +99,7 @@ header {
 .mediumWords {
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
-  font-size: 7em;
+  font-size: 6em;
   color: #222940;
   /* -webkit-animation: lightsMedium 0.9s ease-in infinite alternate;
   -moz-animation: lightsMedium 0.9s ease-in infinite alternate;
@@ -193,5 +194,45 @@ canvas.particles-js-canvas-el {
   padding: 180px 0px 80px 0px;
   position: relative;
   background-size: 98%;
+  margin-bottom: 5em;
   /* background-size: 560px; */
 }
+
+/* Clients Logos Section */
+.clientSection {
+  padding: 60px 0px 100px 0px;
+  background: url(../images/svg/shapeClients.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: auto;
+}
+
+.clientSection h2, .clientSection h5 {
+  text-align: center;
+}
+
+.clientSection h5 {
+  margin-bottom: 50px;
+}
+
+/* Logo item */
+.item {
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3)) grayscale(20);
+  transition: all 0.5s ease;
+}
+
+.item:hover {
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3)) grayscale(0);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.item img {
+  max-height: 220px;
+  padding: 15px 0px;
+}
+
+/* End Logo item */
+
+/* End Clients Logos Section */
