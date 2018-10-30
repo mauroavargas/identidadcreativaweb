@@ -26,11 +26,11 @@
         text-align: center;
         margin: 0 auto;
         font-size: 60px;
-        line-height: 30px;
-        padding: 30px 20px 20px 10px;
+        line-height: 70px;
+        padding: 0px 0px 20px 0px;
     }
 
-    .moonSide {
+    .moonSide, .moonSideShadow {
         display: none;
     }
 
@@ -43,8 +43,31 @@
     }
 
     .svgObject {
-        margin-top: -100px;
+        margin-top: -120px;
     }
     
+    .weAreIC {
+        background-position: right center;
+        background-repeat: no-repeat;
+        padding: 120px 0px 20px 0px;
+        position: relative;
+        background-size: cover;
+        margin-bottom: 2em;
+        height: 100vh;
+    }
+
+    .clientSection {
+        padding: 45px 0px 100px 0px;
+        background-size: cover;
+        background-position: left;
+    }
+
+    .clientSection .mediumWords, .clientSection h5 {
+        color: #fefefe;
+    }
+
+    .item {
+        filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3)) grayscale(0);
+    }
 
     }
