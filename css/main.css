@@ -1,0 +1,196 @@
+body {
+  background: #fefefe;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  z-index: 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+header {
+  min-height: 650px;
+}
+
+.bgNone {
+  background: none !important;
+}
+
+/* Home Words */
+.giantWords {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 85px;
+  line-height: 80px;
+  color: #fefefe;
+  margin: 70px 0px 10px;
+  padding: 30px;
+  -webkit-animation: lights 0.9s ease-in infinite alternate;
+  -moz-animation: lights 0.9s ease-in infinite alternate;
+  animation: lights 0.9s ease-in infinite alternate;
+}
+
+.giantWords span {
+  font-family: 'Poppins', sans-serif;
+  color: #fefefe;
+}
+
+/* Words Light Animation */
+@keyframes lights {
+  from {
+    text-shadow: 0px 0px 0px #fff;
+  }
+  to {
+    text-shadow: 0px 0px 40px #fff;
+  }
+}
+
+/* End Home Words */
+
+
+.logoHome {
+  padding: 40px 15px 0px 50px;
+  max-width: 380px;
+}
+
+.moonSide {
+  background-image: url(../images/svg/planet.svg);
+  background-repeat: no-repeat;
+  width: 650px;
+  height: 650px;
+  position: relative;
+  background-position: right;
+  background-size: contain;
+  transition: all 2s ease-in-out;
+  animation: moonFloat 5s ease-in-out infinite;
+  z-index: 9999999;
+  position: absolute;
+}
+
+.moonSideShadow {
+  position: absolute;
+  height: 15px;
+  background: #999;
+  opacity: 0.4;
+  border-radius: 100%;
+  margin: 0px;
+  width: 150px;
+  top: 690px;
+  right: 50px;
+  animation: moonFloatShadow 5s ease-in-out infinite;
+}
+
+@keyframes moonFloat {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 15px); }
+  to   { transform: translate(0, -0px); } 
+}
+
+@keyframes moonFloatShadow {
+  from { transform: scale(0.8); }
+  65%  { transform: scale(1.3); }
+  to   { transform: scale(0.8); } 
+}
+
+
+/* Words Sections Titles */
+.mediumWords {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 80px;
+  color: #fff;
+  -webkit-animation: lightsMedium 0.9s ease-in infinite alternate;
+  -moz-animation: lightsMedium 0.9s ease-in infinite alternate;
+  animation: lightsMedium 0.9s ease-in infinite alternate;
+  background: #749336;
+  border-radius: 50px 0px;
+  padding: 30px 20px 1px 20px;
+  max-height: 200px;
+  max-width: 500px;
+  box-shadow: 0px 0px 40px #7d8e3a;
+  line-height: 80px;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.mediumWords span {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 159px;
+  line-height: 130px;
+  color: #fdfdfd;
+}
+
+/* Lights for Sections Title */
+@keyframes lightsMedium {
+  from {
+    text-shadow: 0px 0px 0px #8ec254;
+  }
+  to {
+    text-shadow: 0px 0px 10px #8ec254;
+  }
+}
+/* End Words Sections Titles */
+
+.lightGreenBtn {
+  color: #fefefe;
+  background-color: #85b036;
+  background: linear-gradient(180deg, #DFEC51 0%, #73AA0A 100%);
+  position: relative;
+  margin-top: 0px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0px 0px 5px rgb(143, 189, 19);
+  transition: all 0.4s ease-in-out;
+}
+
+.lightGreenBtn:hover {
+  color: #fefefe;
+  background: #73AA0A;
+  box-shadow: 0px 0px 40px rgb(143, 189, 19);
+  text-decoration: none;
+  border-radius: 0px;
+  transition: all 0.4s ease-in-out;
+}
+
+.bannerBtns li {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.bgGradient {
+  background: #000046;
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+  background: linear-gradient(to right, #123d5b, #041830);
+}
+
+/* Home rounded shape */
+.svgObject {
+  margin-top: -130px;
+  position: absolute;
+  z-index: 0;
+}
+
+/* ParticlesJs Container */
+#particles-js{ 
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #232741;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 50% 50%;
+}
+
+canvas.particles-js-canvas-el {
+  position: absolute;
+  top: 0;
+}
+
+#particles-js .col-md-6 {
+  z-index: 9;
+}
